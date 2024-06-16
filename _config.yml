@@ -12,5 +12,8 @@ plugins:
   - jekyll-inline-svg
   - jekyll-postcss
 
+svg:
+  optimize: true
+
 postcss:
   cache: false
