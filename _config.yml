@@ -1,3 +1,6 @@
+baseurl: ""
+url: "https://scrlkx.github.io"
+
 author: "Daniel Freitas"
 nickname: "@scrlkx"
 email: ["me@scrlkx.com", "work@scrlkx.com"]
