@@ -9,11 +9,7 @@ social:
   gitlab: "https://gitlab.com/scrlkx"
 
 plugins:
-  - jekyll-inline-svg
   - jekyll-postcss
-
-svg:
-  optimize: true
 
 postcss:
   cache: false

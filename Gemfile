@@ -4,5 +4,4 @@ gem "jekyll"
 gem "webrick", "~> 1.8"
 
 gem "kramdown-parser-gfm"
-gem "jekyll-inline-svg", "~>0.0.1"
 gem "jekyll-postcss"

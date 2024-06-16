@@ -4,10 +4,7 @@ layout: default
 
 <header class="fixed top-0 left-0 py-4 w-full z-10 h-16 bg-dark shadow-md">
     <div class="max-w-3xl mx-auto h-full flex items-center justify-between">
-        <a href="/" class="inline-flex space-x-2 text-light-gray">
-            {% svg "/assets/svg/arrow-back.svg" class="w-4" %}
-            <span class="text-light-gray font-medium">Home</span>
-        </a>
+        {% include back-link.html href="/" title="Home" %}
         <span class="text-light-gray font-semibold opacity-50">{{ site.nickname }}</span>
     </div>
 </header>
