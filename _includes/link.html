@@ -1,0 +1,3 @@
+{% assign target = include.target | default: "_self" %}
+
+<a href="{{ include.href }}" target="{{ target }}" rel="nopener noreferrer">{{ include.title }}</a>

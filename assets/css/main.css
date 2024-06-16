@@ -1,0 +1,23 @@
+---
+---
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply h-svh;
+    @apply w-svw;
+    @apply grid;
+    @apply place-items-center;
+    @apply cursor-default;
+    @apply overflow-x-hidden;
+  }
+
+  a {
+    @apply text-orange;
+    @apply hover:opacity-80;
+    @apply active:opacity-80;
+  }
+}

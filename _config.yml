@@ -1,0 +1,13 @@
+author: "Daniel Freitas"
+nickname: "@scrlkx"
+email: ["me@scrlkx.com", "work@scrlkx.com"]
+social:
+  github: "https://github.com/scrlkx"
+  gitlab: "https://gitlab.com/scrlkx"
+
+plugins:
+  - jekyll-inline-svg
+  - jekyll-postcss
+
+postcss:
+  cache: false

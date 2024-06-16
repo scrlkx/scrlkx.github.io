@@ -1,0 +1,28 @@
+---
+layout: default
+---
+
+{% assign me_email = site.email[0] %}
+{% assign work_email = site.email[1] %}
+{% assign github = site.social.github %}
+{% assign gitlab = site.social.gitlab %}
+
+<main class="max-w-3xl mx-auto space-y-10 flex flex-col items-center p-2 sm:p-4">
+    <img src="{{ "/assets/profile.png" | relative_url }}" class="sm:w-26 mx-auto w-24 rounded-lg shadow-lg md:w-48" />
+    <div class="space-y-2 text-black dark:text-white text-center">
+        <h1 class="text-xl font-semibold sm:text-3xl">Hello!</h1>
+        <div class="sm:text-lg">
+            <h2>I'm <span class="font-semibold text-green">{{ site.author }}</span>, digitally known as <span class="font-semibold text-green">{{ site.nickname }}</span>.</h2>
+            <h3>This is my online space where I'm all about Coding, Linux and a some nerding stuff.</h3>
+        </div>
+    </div>
+    <div class="space-x-4 font-semibold">
+        {% include link.html href="/blog" title="Blog" %}
+        {% include link.html href=github title="GitHub" %}
+        {% include link.html href=gitlab title="GitLab" %}
+        {% include mail.html address=me_email title="Contact" %}
+    </div>
+</main>
+<div class="sm:fixed sm:bottom-0 p-2 sm:p-4">
+    {% include footer.html %}
+</div>
