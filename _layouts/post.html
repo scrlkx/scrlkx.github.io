@@ -15,17 +15,17 @@
         <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}" />
         <title>{{ site.author }} | {{ site.nickname }}</title>
     </head>
-    <body class="bg-light dark:bg-dark">
-        <header class="fixed top-0 left-0 py-4 w-full z-10 h-16 bg-dark shadow-md">
+    <body class="bg-light dark:bg-dark flex flex-col">
+        <header class="py-4 w-full min-h-16 bg-dark shadow-md">
             <div class="max-w-3xl mx-auto h-full flex items-center justify-between">
                 {% include back-link.html href="/blog" title="Blog" %}
                 <span class="text-light-gray font-semibold opacity-50">{{ site.nickname }}</span>
             </div>
         </header>
-        <main class="max-w-3xl mx-auto pb-4 absolute top-24">
-            <div class="py-8">
-                <h2 class="font-semibold text-3xl text-orange">{{ page.title }}</h2>
-                <div class="inline-flex justify-between text-sm text-gray w-full mt-4">
+        <main class="max-w-3xl mx-auto mt-8 space-y-4">
+            <div class="space-y-2">
+                <h2 class="font-semibold text-xl text-orange">{{ page.title }}</h2>
+                <div class="inline-flex justify-between text-xs text-gray w-full mt-4">
                     <span>Published at {{ page.published_at | date: "%-d %B %Y" }}</span>
                     <span>
                         {% if page.published_at != page.last_edited_at %}
@@ -33,13 +33,13 @@
                         {% endif %}
                     </span>
                 </div>
-                <div class="text-white leading-loose font-serif text-lg space-y-4 font-medium">
-                    {{ content }}
-                </div>
             </div>
-            <div class="bottom-0">
-                {% include footer.html %}
+            <div class="text-white leading-loose font-serif space-y-4 font-medium">
+                {{ content }}
             </div>
         </main>
+        <div class="p-2 sm:p-8">
+            {% include footer.html %}
+        </div>
     </body>
 </html>

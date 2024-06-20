@@ -2,27 +2,24 @@
 layout: default
 ---
 
-<header class="fixed top-0 left-0 py-4 w-full z-10 h-16 bg-dark shadow-md">
+<header class="py-4 w-full min-h-16 bg-dark shadow-md">
     <div class="max-w-3xl mx-auto h-full flex items-center justify-between">
         {% include back-link.html href="/" title="Home" %}
         <span class="text-light-gray font-semibold opacity-50">{{ site.nickname }}</span>
     </div>
 </header>
-<main class="max-w-3xl mx-auto pb-4 absolute top-24">
-    <ul class="space-y-4 cursor-default py-8">
+<main class="max-w-3xl mx-auto mt-8 space-y-4">
+    <ul class="space-y-2 cursor-default">
         {% for post in site.posts %}
             <li>
                 <a href="{{ post.url }}">
                     <div class="bg-dark-gray rounded-lg py-4 px-6">
-                        <h2 class="font-medium text-xl">{{ post.title }}</h2>
+                        <h2 class="font-medium">{{ post.title }}</h2>
                         <p class="leading-2 text-light-gray text-pretty mt-2">{{ post.excerpt }}</p>
-                        <span class="inline-flex justify-end text-sm text-gray w-full mt-4">{{ post.published_at | date: "%-d %B, %Y" }}</span>
+                        <span class="inline-flex justify-end text-xs text-gray w-full mt-4">{{ post.published_at | date: "%-d %B, %Y" }}</span>
                     </div>
                 </a>
             </li>
         {% endfor %}
     </ul>
-    <div class="bottom-0">
-        {% include footer.html %}
-    </div>
 </main>
