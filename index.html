@@ -8,7 +8,9 @@ layout: default
 {% assign gitlab = site.social.gitlab %}
 
 <main class="max-w-3xl mx-auto h-full space-y-10 flex flex-col items-center justify-center p-2 sm:p-4">
-    <img src="{{ "/assets/profile.png" | relative_url }}" class="sm:w-26 mx-auto w-24 rounded-lg shadow-lg md:w-48" />
+    <div class="rounded-full overflow-hidden mx-auto ring-2 ring-green ring-offset-2 ring-offset-dark">
+        <img src="{{ "/assets/profile.png" | relative_url }}" class="sm:w-26 w-24 md:w-48" />
+    </div>
     <div class="space-y-2 text-black dark:text-white text-center">
         <h1 class="text-xl font-semibold sm:text-3xl">Hello!</h1>
         <div class="sm:text-lg">
